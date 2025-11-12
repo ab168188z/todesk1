@@ -1,0 +1,1017 @@
+﻿<!DOCTYPE html>
+<html lang="zh" style="touch-action: none">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    !function (g, d, t, e, v, n, s) { if (g.gdt) return; v = g.gdt = function () { v.tk ? v.tk.apply(v, arguments) : v.queue.push(arguments) }; v.sv = '1.0'; v.bt = 0; v.queue = []; n = d.createElement(t); n.async = !0; n.src = e; s = d.getElementsByTagName(t)[0]; s.parentNode.insertBefore(n, s); }(window, document, 'script', '//mp.zhls.qq.com/sdk/dmp-sdk-js/gdtevent.min.js');
+
+    gdt('init', '1205595907'); // 填写Web数据源对应的密钥
+    gdt('track', 'PAGE_VIEW'); 
+  </script>
+  <link rel="shortcut icon" href="https://se2.360simg.com/d/inn/c96b2eaf7894/logo-360.png" type="image/x-icon">
+  <title></title>
+  <style>
+    html,
+    body {
+      padding: 0px;
+      margin: 0px;
+    }
+
+    .container {
+      width: 100%;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+      background: var(--bg-color);
+    }
+
+    .se_logo {
+      padding: 24px 0 0 32px;
+      display: flex;
+    }
+
+    .logo {
+      width: 200px;
+      height: 60px;
+    }
+
+    .logo img {
+      width: 200px;
+      height: 60px;
+    }
+
+    .logo .head_icon {
+      display: block;
+      width: 200px;
+      height: 60px;
+      /* background-image: url("http://soft.uesou.cn/images/shuihua.png"); */
+      /* background-size: 220px 50px; */
+    }
+
+    .logo1 {
+      width: 200px;
+      height: 60px;
+      display: flex;
+      align-items: center;
+
+    }
+
+    .logo1 img {
+      width: 150px;
+      /* margin-left: 10px; */
+    }
+
+    .tuiguang_content {
+      margin: 0 auto;
+      width: fit-content;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .tuiguang_title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .tuiguang_title i {
+      display: block;
+      width: 64px;
+      height: 64px;
+      background-image: url("static/image/t11b673bcd66e7e3d2c38261226.png");
+      background-size: 64px 64px;
+      margin-right: 8px;
+    }
+
+    .tuiguang_title span {
+      color: #000;
+      text-align: center;
+      font-family: "Microsoft YaHei UI";
+      font-size: 54px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 69px;
+    }
+
+    .tuiguang_text {
+      margin-top: 12px;
+      width: 580px;
+      color: rgba(0, 0, 0, 0.6);
+      text-align: center;
+      font-family: "Microsoft YaHei";
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 29px;
+      /* 161.111% */
+      letter-spacing: 0.18px;
+    }
+
+    .tuiguang_btn_box {
+      margin-top: 40px;
+      position: relative;
+    }
+
+    .tuiguang_btn_box .tuiguang_btn {
+      width: 280px;
+      height: 72px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 80px;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      background: var(--btn-normal-color);
+      /* box-shadow: 0px 4px 10px 0px rgba(255, 111, 0, 0.3); */
+      box-shadow: var(--btn-shadow-color);
+      text-decoration: none;
+    }
+
+    .tuiguang_btn_box .tuiguang_btn:hover {
+      background: var(--btn-hover-color);
+    }
+
+    .tuiguang_btn_box .tuiguang_btn:active {
+      background: var(--btn-active-color);
+    }
+
+    .tuiguang_btn_box .tuiguang_btn i {
+      display: block;
+      width: 24px;
+      height: 24px;
+      background-image: url("static/image/t11b673bcd67dbca4043c86833f.png");
+      background-size: 24px 24px;
+    }
+
+    .tuiguang_btn_box .tuiguang_btn span {
+      margin-left: 8px;
+      color: #fff;
+      font-family: "Microsoft YaHei";
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 700;
+    }
+
+    .tuiguang_btn_box .tuiguang_vip {
+      width: 93px;
+      height: 30px;
+      line-height: 30px;
+      position: absolute;
+      right: -24px;
+      top: -15px;
+      border-radius: 12px 16px 16px 2px;
+      border: 1px solid rgba(0, 0, 0, 0.16);
+      background: linear-gradient(183deg,
+          #fef5cd 13.76%,
+          #ffe0a2 43.88%,
+          #eac477 97.24%);
+      color: #6d3d0f;
+      text-align: center;
+      font-family: "Microsoft YaHei UI";
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      letter-spacing: 0.56px;
+      display: none;
+    }
+
+    .tuiguang_image {
+      display: block;
+      margin-top: 40px;
+      width: 934px;
+      height: 540px;
+      flex-shrink: 0;
+    }
+
+    .tuiguang_image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .tuiguang_se {
+      margin-top: 12px;
+    }
+
+    .tuiguang_se span {
+      color: rgba(0, 0, 0, 0.4);
+      font-family: "Microsoft YaHei";
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 22px;
+    }
+
+    .tuiguang_se a {
+      color: rgba(0, 0, 0, 0.6);
+      font-family: "Microsoft YaHei";
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 22px;
+      text-decoration-line: underline;
+    }
+
+    .tuiguang_se a:hover {
+      color: #0052d9;
+    }
+
+    .tuiguang_se a:active {
+      color: #003cab;
+    }
+
+    .footer {
+      margin: 24px auto 0;
+      text-align: center;
+      padding: 24px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(0, 0, 0, 0.4);
+      text-align: center;
+      font-family: "Microsoft YaHei";
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    .footer .split {
+      width: 1px;
+      height: 10px;
+      background: rgba(0, 0, 0, 0.4);
+      margin: 0 12px;
+    }
+
+    .tishi {
+      color: rgba(0, 0, 0, 0.4);
+      font-size: 12px;
+    }
+
+    .xh {
+      color: rgba(0, 0, 0, 0.4);
+      font-size: 12px;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .footer {
+      margin: 24px auto 0;
+      text-align: center;
+      padding: 24px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(0, 0, 0, 0.4);
+      text-align: center;
+      font-family: "Microsoft YaHei";
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    .footer .split {
+      width: 1px;
+      height: 10px;
+      background: rgba(0, 0, 0, 0.4);
+      margin: 0 12px;
+    }
+
+    .tishi {
+      color: rgba(0, 0, 0, 0.4);
+      font-size: 12px;
+    }
+
+    .xh {
+      color: rgba(0, 0, 0, 0.4);
+      font-size: 12px;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .xh a {
+      color: rgba(0, 0, 0, 0.6);
+      font-size: 12px;
+      text-align: center;
+    }
+
+    svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -250px;
+      margin-left: -400px;
+    }
+
+    .message-box {
+      height: 200px;
+      width: 380px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: -100px;
+      margin-left: 50px;
+      color: #2F3242;
+      font-family: Roboto;
+      font-weight: 300;
+    }
+
+    .message-box h1 {
+      font-size: 60px;
+      line-height: 46px;
+      margin-bottom: 40px;
+    }
+
+    .buttons-con .action-link-wrap {
+      margin-top: 40px;
+    }
+
+    .buttons-con .action-link-wrap a {
+      background: #68c950;
+      padding: 8px 25px;
+      border-radius: 4px;
+      color: #FFF;
+      font-weight: bold;
+      font-size: 14px;
+      transition: all 0.3s linear;
+      cursor: pointer;
+      text-decoration: none;
+      margin-right: 10px
+    }
+
+    .buttons-con .action-link-wrap a:hover {
+      background: #5A5C6C;
+      color: #fff;
+    }
+
+    #Polygon-1,
+    #Polygon-2,
+    #Polygon-3,
+    #Polygon-4,
+    #Polygon-4,
+    #Polygon-5 {
+      -webkit-animation: float 1s infinite ease-in-out alternate;
+      animation: float 1s infinite ease-in-out alternate;
+    }
+
+    #Polygon-2 {
+      -webkit-animation-delay: .2s;
+      animation-delay: .2s;
+    }
+
+    #Polygon-3 {
+      -webkit-animation-delay: .4s;
+      animation-delay: .4s;
+    }
+
+    #Polygon-4 {
+      -webkit-animation-delay: .6s;
+      animation-delay: .6s;
+    }
+
+    #Polygon-5 {
+      -webkit-animation-delay: .8s;
+      animation-delay: .8s;
+    }
+
+    @-webkit-keyframes float {
+      100% {
+        -webkit-transform: translateY(20px);
+        transform: translateY(20px);
+      }
+    }
+
+    @keyframes float {
+      100% {
+        -webkit-transform: translateY(20px);
+        transform: translateY(20px);
+      }
+    }
+
+    @media (max-width: 450px) {
+      svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -250px;
+        margin-left: -190px;
+      }
+
+      .message-box {
+        top: 50%;
+        left: 50%;
+        margin-top: -100px;
+        margin-left: -190px;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- <div class="container">
+      <div class="se_logo"><i></i></div>
+      <div class="tuiguang_content">
+        <div class="tuiguang_title">
+          <i class="tuiguang_title_icon"></i>
+          <span class="tuiguang_title_text"></span>
+        </div>
+        <div class="tuiguang_text"></div>
+        <div class="tuiguang_btn_box">
+          <a class="tuiguang_btn">
+            <i></i>
+            <span>下载客户端</span>
+          </a>
+          <div class="tuiguang_vip">限时送VIP</div>
+        </div>
+        <div class="tuiguang_image">
+          <img alt="推广大图" />
+        </div>
+        <div class="tuiguang_se">
+          <span class="bottom_text"></span>
+          <a
+            class="normal_btn"
+            href="https://down.360safe.com/se/setup_online_1.1.20.0._sembd100107_exe.exe"
+            >普通下载</a
+          >
+        </div>
+      </div>
+      <div class="footer">
+        <img
+          src="https://p4.ssl.qhimg.com/t11b673bcd6a38e59e9756819b6.png"
+          width="16"
+          height="16"
+        />
+        <span>京公网安备 11000002000006号</span>
+        <div class="split"></div>
+        <span>隐私政策</span>
+        <div class="split"></div>
+        <span>京ICP证080047号[京ICP备08010314号-6]</span>
+        <div class="xh">需安装360浏览器，免费领8大VIP会员权益</div>
+      </div>
+    </div> -->
+  <script>(function (w, d, t, r, u) { var f, n, i; w[u] = w[u] || [], f = function () { var o = { ti: "343162039", enableAutoSpaTracking: true }; o.q = w[u], w[u] = new UET(o), w[u].push("pageLoad") }, n = d.createElement(t), n.src = r, n.async = 1, n.onload = n.onreadystatechange = function () { var s = this.readyState; s && s !== "loaded" && s !== "complete" || (f(), n.onload = n.onreadystatechange = null) }, i = d.getElementsByTagName(t)[0], i.parentNode.insertBefore(n, i) })(window, document, "script", "//bat.bing.com/bat.js", "uetq");</script>
+  <script>
+    const API = {
+      param2Obj(url) {
+        const search = decodeURIComponent(url.split("?")[1]).replace(
+          /\+/g,
+          " "
+        );
+        if (!search) {
+          return {};
+        }
+        const obj = {};
+        const searchArr = search.split("&");
+        searchArr.forEach((v) => {
+          const index = v.indexOf("=");
+          if (index !== -1) {
+            const name = v.substring(0, index);
+            const val = v.substring(index + 1, v.length);
+            obj[name] = val;
+          }
+        });
+        return obj;
+      },
+      jsonp(url, callbackName) {
+        var script = document.createElement("script");
+        script.src = `${url}?callback=${callbackName}`;
+        document.body.appendChild(script);
+      },
+      pid: "",
+      GetSID() {
+        if (API.sid) {
+          return API.sid;
+        }
+        try {
+          API.sid = external.GetSID(window);
+          return API.sid;
+        } catch (e) {
+          return "";
+        }
+      },
+      GetMID() {
+        if (API.mid) {
+          return API.mid;
+        }
+        API.mid =
+          (API.GetSID() && external.GetMID(API.sid)) ||
+          "00000000000000000000000000000000";
+        return API.mid;
+      },
+      GetVersion() {
+        if (API.ver) {
+          return API.ver;
+        }
+        API.ver = API.GetSID() && external.GetVersion(API.sid);
+        return API.ver;
+      },
+      sendGif(filename, data, callback) {
+        var files = [];
+        if (Object.prototype.toString.call(filename) == "[object String]") {
+          files.push(filename);
+        } else if (Object.prototype.toString.call(filename) == "[object Array]") {
+          files = filename;
+        } else {
+          return;
+        }
+        if (!Array.prototype.forEach) {
+          Array.prototype.forEach = function forEach(callback, thisArg) {
+            var T, k;
+
+            if (this == null) {
+              throw new TypeError("this is null or not defined");
+            }
+            var O = Object(this);
+            var len = O.length >>> 0;
+            if (typeof callback !== "function") {
+              throw new TypeError(callback + " is not a function");
+            }
+            if (arguments.length > 1) {
+              T = thisArg;
+            }
+            k = 0;
+
+            while (k < len) {
+              var kValue;
+              if (k in O) {
+                kValue = O[k];
+                callback.call(T, kValue, k, O);
+              }
+              k++;
+            }
+          };
+        }
+
+        files.forEach(function (item) {
+          var params = "";
+          if (data && typeof data == "object") {
+            for (var k in data) {
+              var v = data[k];
+              try {
+                v = encodeURIComponent(v);
+              } catch (e) { }
+              params += k + "=" + v + "&";
+            }
+          }
+          new Image().src =
+            "https://dd.browser.360.cn/static/a/" +
+            item +
+            "?" +
+            params +
+            "mid=" +
+            API.GetMID() +
+            "&" +
+            Date.now() +
+            Math.random().toString().replace("0.", "").substr(0, 10);
+        });
+
+      },
+    };
+  </script>
+  <script>
+    ~(async function () {
+      const pid = API.param2Obj(window.location.href).pid || "";
+      const sid = API.param2Obj(window.location.href).sid || "";
+
+      API.pid = pid;
+      API._sid = sid;
+
+
+      // 获取页面渲染配置
+      API.jsonp(
+        "./assets/config.jsonp",
+        // "./assets/config.json"
+        "se_tuiguang_download_config"
+      );
+      // console.log('API---',API);
+    })();
+    function se_tuiguang_download_config(data) {
+      if (!data) return;
+      if (API._sid && !data[API._sid]) {
+        API._sid = '';
+        API.pid = 'sembd100107'
+      }
+      const ls = API.pid.includes('sembd') ? 'n62791173a2' : API.pid.includes('semsg') ? 'n66691174a0' : 'n58791175a1';
+      API._ls = ls;
+      const configObj = data[API._sid] || data['sembd100107'];
+      if (
+        !(
+          Object.prototype.toString.call(configObj) === "[object Object]" &&
+          Object.keys(configObj).length
+        )
+      )
+        return;
+      const params = API.param2Obj(window.location.href);
+
+      // 获取当前域名
+      const currentDomain = window.location.hostname;
+      // const currentDomain = 'aqllq.yzvhwg.cn';//本地测试
+
+      // 定义域名配置
+      const domainConfigs = {
+        'aqllq.softap.cn': {
+          logo: 'http://soft.uesou.cn/images/log_zhuifengxiazai.png',
+          company: '马鞍山晓宁网络科技有限公司合肥分公司',
+          icp: '皖ICP备2021017457号-1',
+          company_address: ' 安徽省合肥市经济技术开发区海恒社区建业时光原著7栋1102室',
+          company_phone: '联系电话：4001974875',
+        },
+        'aqllq.wxqlzkj.cn': {
+          logo: 'http://soft.uesou.cn/images/log_zhuifengxiazai.png',
+          company: '无锡麒林智科技有限公司合肥分公司',
+          icp: '苏ICP备2024093127号-2',
+          company_address: ' 安徽省合肥市蜀山区蜀山经济开发区花峰路1201号跨境电商产业园三期3幢GF区4层长河经济城H5360号',
+          company_phone: '联系电话：4001974875',
+        },
+        'aqllq.bzyinxiao8.com': {
+          logo: 'http://soft.uesou.cn/images/log_zhuifengxiazai.png',
+          company: '马鞍山星宝网络科技有限公司',
+          icp: '皖ICP备2021013872号',
+          company_address: ' 安徽省马鞍山市郑蒲港新区中飞大道277号现代产业孵化园6号楼2楼203室',
+          company_phone: '联系电话：4001974875',
+        },
+        'aqllq.fengal.cn': {
+          logo: 'http://soft.uesou.cn/images/log_zhuifengxiazai.png',
+          company: '马鞍山顺瑶网络科技有限公司合肥分公司',
+          icp: '皖ICP备2022000564号-4',
+          company_address: '安徽省合肥市蜀山区五里墩街道史河路与潜山路交口凤凰城燕园15栋602室',
+          company_phone: '联系电话：4001974875',
+        },
+        'aqllq.fengmie.cn': {
+          logo: 'http://soft.uesou.cn/images/log_zhuifengxiazai.png',
+          company: '马鞍山晓宁网络科技有限公司',
+          icp: '皖ICP备2021017457号',
+          company_address: '马鞍山市花山区霍里镇霍里山大道北段698号',
+          company_phone: '联系电话：4001974875',
+        },
+        'aqllq.zuitie.cn': {
+          logo: 'https://soft.uesou.cn/images/logo/baozang-v3.png',
+          company: '马鞍山超聪网络科技有限公司',
+          icp: '皖ICP备2021013870号-9',
+          company_address: '马鞍山市郑蒲港新区孵化园6号楼4层',
+          company_phone: '联系电话：4006886515',
+        },
+        'aqllq.sengfeng.cn': {
+          logo: 'http://soft.uesou.cn/images/shuihua.png',
+          company: '合肥水花网络科技有限公司',
+          icp: '皖ICP备2022004577号-3',
+          company_address: '中国(安徽)自由贸易试验区合肥市高新区习友路3333号中国(合肥)国际智能语音产业园研发中心楼508-1室 ',
+          company_phone: '联系电话：4006886515',
+        },
+        'aqllq.qinruiw.cn': {
+          logo: 'http://soft.uesou.cn/images/log_zhuifengxiazai.png',
+          company: '莆田市勤瑞网络科技有限公司 ',
+          icp: '闽ICP备2023026585号',
+          company_address: '福建省莆田市城厢区霞林街道棠霞路1548号、1552号、1556号、1560号、1564号、1568号、1572号(集群注册) ',
+          company_phone: '联系电话400-6493699',
+          // right_icon: 'http://soft.uesou.cn/images/shuihua.png'
+        },
+        'aqllq.xuanbenw.cn': {
+          logo: 'http://soft.uesou.cn/images/log_zhuifengxiazai.png',
+          company: '莆田市旋本网络科技有限公司',
+          icp: '闽ICP备2023023378号',
+          company_address: '闽ICP备2023023378号 福建省莆田市城厢区霞林街道棠霞路1548号、1552号、1556号、1560号、1564号、1568号、1572号(集群注册) ',
+          company_phone: '联系电话400-6493699',
+          // right_icon: 'http://soft.uesou.cn/images/shuihua.png'
+        },
+        'aqllq.sidiwk.cn': {
+          logo: 'http://soft.uesou.cn/images/log_zhuifengxiazai.png',
+          company: '莆田市丝迪网络科技有限公司',
+          icp: '闽ICP备2023025607号',
+          company_address: '福建省莆田市城厢区霞林街道棠霞路1548号、1552号、1556号、1560号、1564号、1568号、1572号(集群注册) ',
+          company_phone: '联系电话400-6493699',
+          // right_icon: 'http://soft.uesou.cn/images/shuihua.png'
+        },
+        'aqllq.sengzai.com': {
+          logo: 'http://soft.uesou.cn/images/log_zhuifengxiazai.png',
+          company: '马鞍山圣秦网络科技有限公司合肥分公司',
+          icp: '皖ICP备2021013847号-5 ',
+          company_address: '安徽省合肥市瑶海区龙岗综合经济开发区龙岗路公园天著10栋502室 ',
+          company_phone: '联系电话：4001974875',
+        },
+        'aqllq.lingdoh.cn': {
+          logo: 'http://soft.uesou.cn/images/log_zhuifengxiazai.png',
+          company: '温州凌峒互联网服务有限公司',
+          icp: '浙ICP备2024091054号 ',
+          company_address: '浙江省温州市鹿城区藤桥镇渔藤路288号310室40号 ',
+          company_phone: '联系电话：4001974875',
+        },
+        'aqllq.bahanw.cn': {
+          logo: 'http://soft.uesou.cn/images/log_zhuifengxiazai.png',
+          company: '温州芭瀚互联网服务有限公司',
+          icp: '浙ICP备2024090704号 ',
+          company_address: '浙江省温州市鹿城区藤桥镇渔藤路288号310室45号 ',
+          company_phone: '联系电话：4001974875',
+        },
+        'aqllq.eguvtvu.cn': {
+          logo: 'http://soft.uesou.cn/images/log_zhuifengxiazai.png',
+          company: '扬州康鹏网络科技有限公司安阳分公司 ',
+          icp: '苏ICP备2025165945号 ',
+          company_address: '河南省安阳市高新区弦歌大道西段科创大厦众创空间710-F23号 ',
+          company_phone: '联系电话：40003098853',
+        },
+        'aqllq.uesou.cn': {
+          logo: 'http://soft.uesou.cn/images/log_zhuifengxiazai.png',
+          company: '马鞍山优易搜网络科技有限公司 ',
+          icp: '皖ICP备2022002201号-1 ',
+          company_address: ' 安徽省马鞍山市郑蒲港新区中飞大道277号现代产业孵化园6号楼2楼401室 ',
+          company_phone: '联系电话：4001974875',
+        },
+        'aqllq.klppt.com': {
+          logo: 'http://soft.uesou.cn/images/log_zhuifengxiazai.png',
+          company: '马鞍山丽智网络科技有限公司 ',
+          icp: '皖ICP备2021015826号-1 ',
+          company_address: '马鞍山市花山区霍里镇霍里山大道北段698号 ',
+          company_phone: '联系电话：4001974875',
+        },
+        'aqllq.piaoran.cn': {
+          logo: 'http://soft.uesou.cn/images/log_zhuifengxiazai.png',
+          company: '马鞍山顺瑶网络科技有限公司  ',
+          icp: '皖ICP备2022000564号-5 ',
+          company_address: '马鞍山市花山区霍里镇霍里山大道北段698号 ',
+          company_phone: '联系电话：4001974875',
+        },
+        'aqllq.njjhykj.com': {
+          logo: 'http://soft.uesou.cn/images/log_zhuifengxiazai.png',
+          company: '南京聚华游网络科技有限公司  ',
+          icp: '苏ICP备2025163772号-1 ',
+          company_address: '江苏省南京市浦口区桥林街道西街湾6号1幢104室-10  ',
+          company_phone: ' 联系联系电话：4001055185 ',
+        },
+        'aqllq.njmsy.com': {
+          logo: 'http://soft.uesou.cn/images/log_zhuifengxiazai.png',
+          company: '南京迈斯远网络科技有限公司     ',
+          icp: '苏ICP备2025163210号-1 ',
+          company_address: '江苏省南京市浦口区桥林街道西街湾6号1幢104室-3 ',
+          company_phone: ' 联系联系电话：4001055185',
+        },
+        'aqllq.njblqs.com': {
+          logo: 'http://soft.uesou.cn/images/log_zhuifengxiazai.png',
+          company: '南京博览群书网络科技有限公司  ',
+          icp: '苏ICP备2025164743号-1 ',
+          company_address: '江苏省南京市六合区龙池街道雄州南路399号恒盛园区425幢一单元301室  ',
+          company_phone: '联系联系电话：4001055185',
+        },
+        'aqllq.eguvtvu.cn': {
+          logo: 'http://soft.uesou.cn/images/log_zhuifengxiazai.png',
+          company: '扬州康鹏网络科技有限公司安阳分公司    ',
+          icp: '苏ICP备2025165945号  ',
+          company_address: '河南省安阳市高新区弦歌大道西段科创大厦众创空间710-F23号  ',
+          company_phone: ' 联系电话：4001974875 ',
+        },
+        'aqllq.gefasaf.cn': {
+          logo: 'http://soft.uesou.cn/images/log_zhuifengxiazai.png',
+          company: '河南祥豚网络科技有限公司     ',
+          icp: '豫ICP备2021034178号 ',
+          company_address: '河南省新乡市卫滨区新原路与南环路交叉口南环货运中心B027-6号',
+          company_phone: '联系电话：4001974875',
+        },
+        'aqllq.ayztps.cn': {
+          logo: 'http://soft.uesou.cn/images/log_zhuifengxiazai.png',
+          company: '安阳珍甜网络科技有限公司  ',
+          icp: '豫ICP备2023002113号-4 ',
+          company_address: '河南省安阳市高新区文昌大道309号沃金国际大厦23层2388室  ',
+          company_phone: '联系电话：4001974875',
+        },
+        'aqllq.wanmeilasa.com': {
+          logo: 'http://soft.uesou.cn/images/log_zhuifengxiazai.png',
+          company: '西藏容达信息技术有限公司     ',
+          icp: ' 藏ICP备2025002513号-1 ',
+          company_address: '西藏自治区拉萨市柳梧新区世纪大道长兴都汇大厦4楼4号',
+          company_phone: ' 联系电话：4001974875',
+        },
+        'aqllq.gaoyuanmeijing.com': {
+          logo: 'http://soft.uesou.cn/images/log_zhuifengxiazai.png',
+          company: '西藏名琪科技有限公司  ',
+          icp: '藏ICP备2024001543号-1 ',
+          company_address: '西藏自治区拉萨市柳梧新区世纪大道长兴都汇大厦4楼4-4室  ',
+          company_phone: '联系电话：4001974875',
+        },
+        'aqllq.nbjlxn.cn': {
+          logo: 'http://soft.uesou.cn/images/log_zhuifengxiazai.png',
+          company: '宁波晶洛科技有限公司  ',
+          icp: '浙ICP备2023042604号-1 ',
+          company_address: '浙江省宁波市鄞州区钟公庙街道熙汐大厦1号1007室  ',
+          company_phone: '联系电话：4001974875',
+        },
+        'aqllq.hnldxc.cn': {
+          logo: 'http://soft.uesou.cn/images/log_zhuifengxiazai.png',
+          company: '安阳了了网络科技有限公司 ',
+          icp: ' 豫ICP备2023003166号',
+          company_address: '河南省安阳市高新区文昌大道与彰德路交叉口东南角红河批发市场B01栋08号   ',
+          company_phone: ' 联系电话：4001974875',
+        },
+        'aqllq.sdjiapa.cn': {
+          logo: 'http://soft.uesou.cn/images/log_zhuifengxiazai.png',
+          company: '扬州久尺网络科技有限公司 ',
+          icp: ' 苏ICP备2023028652号 ',
+          company_address: '扬州市蜀冈-瘦西湖风景名胜区梅岭街道史可法东路75号-1   ',
+          company_phone: ' 联系电话：4001974875',
+        },
+        'aqllq.yzvhwg.cn': {
+          logo: 'http://soft.uesou.cn/images/log_zhuifengxiazai.png',
+          company: '扬州自由行网络科技有限公司 ',
+          icp: ' 苏ICP备2023009833号 ',
+          company_address: '扬州市广陵区渡江南路299号（汇金广场）1-501   ',
+          company_phone: ' 联系电话：4001974875',
+        }
+      };
+
+      // 获取当前域名配置，如果未找到则使用默认配置
+      const currentConfig = domainConfigs[currentDomain] || domainConfigs['aqllq.softap.cn'];
+
+
+      let domStr = `<div class="container">
+                                    <div class="se_logo">
+                                      <div class='logo'><a href="https://${currentDomain}" ><img class="head_icon" src="${currentConfig.logo}"  alt="logo"></a></div>
+                                    </div>
+                                    <div class="tuiguang_content">
+                                      <div class="tuiguang_title">
+                                        <i class="tuiguang_title_icon"></i>
+                                        <span class="tuiguang_title_text"></span>
+                                      </div>
+                                      <div class="tuiguang_text"></div>
+                                      <div class="tuiguang_btn_box">
+                                        <a class="tuiguang_btn safe-btn-download" id='downloadClick'>
+                                          <i></i>
+                                          <span>下载客户端</span>
+                                        </a>
+                                        <div class="tuiguang_vip">限时送VIP</div>
+                                      </div>`
+      if (API._sid === 'sem90010') {
+        domStr = domStr +
+          `<p class="btn_tishi xh">
+                              需安装360浏览器，享受更多权益。不需要，可选择
+                              <a class="normal_btn" href="https://down.360safe.com/se/setup_online_1.1.20.0._sembd100107_exe.exe">普通下载</a>
+                            </p>`
+      } else {
+        domStr = domStr + `<p class="xh">需安装360浏览器，免费领8大VIP会员权益</p>`
+      }
+
+      domStr = domStr + `<a class="tuiguang_image safe-btn-download">
+                          <img alt="推广大图" />
+                        </a>
+                        <div class="tuiguang_se">
+                          <span class="bottom_text"></span>
+                          <a
+                            class="normal_btn ssh"
+                            href="https://down.360safe.com/se/setup_online_1.1.20.0._sembd100107_exe.exe"
+                            >普通下载</a
+                          >
+                        </div>
+                        <p class='tishi'>在安装过程中，有任何疑问请联系官方客服为您解答 siyu@360.cn</p>
+                      </div>
+                                  
+                                    <div class="footer">
+                                      <img
+                                        src="https://p4.ssl.qhimg.com/t11b673bcd6a38e59e9756819b6.png"
+                                        width="16"
+                                        height="16"
+                                      />
+                                      <span>${currentConfig.company} ${currentConfig.icp} ${currentConfig.company_address} ${currentConfig.company_phone}</span>
+                                    </div>
+                                  </div>`;
+      document.body.innerHTML = domStr;
+
+      const {
+        bgColor,
+        bottom_text,
+        downBtnBgColor,
+        downBtnActiveBgColor,
+        downBtnHoverBgColor,
+        downBtnShadowColor,
+        logo_image,
+        logo_title,
+        showVipBtn,
+        tuiguang_download_url,
+        normal_download_url,
+        tuiguang_image,
+        tuiguang_text,
+        page_title,
+        headIcon,
+      } = configObj;
+      const isCommonUrl = ['sem90999'].includes(API._sid)
+      const tuiguangBtn = document.querySelector(".tuiguang_btn");
+      const normalBtn = document.querySelector(".normal_btn");
+      const tuiguangImage = document.querySelector(".tuiguang_image");
+      const headIconDom = document.querySelector(".head_icon");
+      const tishiDom = document.querySelector(".tishi");
+      headIcon && (headIconDom.style.background = headIcon);
+      let downloadUrl = tuiguang_download_url;
+
+      if (API._sid) {
+        // 有sid 正确 有pid
+        downloadUrl = downloadUrl + API._sid
+        if (API.pid) {
+          downloadUrl = downloadUrl + "_" + API.pid
+        }
+        // 有sid 无pid downloadUrl =  downloadUrl + "__.exe"
+      } else {
+        // 无sid 有pid
+
+        if (API.pid) {
+          downloadUrl = downloadUrl + API.pid
+          // downloadUrl =  downloadUrl + "__.exe"
+        }
+      }
+      if (API.pid && API._ls) {
+        downloadUrl = downloadUrl + "__" + API._ls
+      }
+      if (!API.pid && !API._sid) {
+        // pid 和 sid 都没有
+        downloadUrl = downloadUrl + "sembd100107__.exe"
+      } else {
+        downloadUrl = downloadUrl + "__.exe"
+      }
+      if (['sem90006', 'sem90012', 'sem90013', 'sem90019', 'sem90021', 'sem90022', 'sem90036', 'sem90037', 'sem90049', 'sem90055', 'sem90056', 'sem90075'].includes(API._sid)) {
+        document.getElementsByClassName('xh')[0].style.display = 'none'
+      }
+      if (['sem90053'].includes(API._sid)) {
+        // 显示404页面
+        document.body.innerHTML = `<svg width="380px" height="500px" viewBox="0 0 837 1045" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+              <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+                  <path d="M353,9 L626.664028,170 L626.664028,487 L353,642 L79.3359724,487 L79.3359724,170 L353,9 Z" id="Polygon-1" stroke="#007FB2" stroke-width="6" sketch:type="MSShapeGroup"></path>
+                  <path d="M78.5,529 L147,569.186414 L147,648.311216 L78.5,687 L10,648.311216 L10,569.186414 L78.5,529 Z" id="Polygon-2" stroke="#EF4A5B" stroke-width="6" sketch:type="MSShapeGroup"></path>
+                  <path d="M773,186 L827,217.538705 L827,279.636651 L773,310 L719,279.636651 L719,217.538705 L773,186 Z" id="Polygon-3" stroke="#795D9C" stroke-width="6" sketch:type="MSShapeGroup"></path>
+                  <path d="M639,529 L773,607.846761 L773,763.091627 L639,839 L505,763.091627 L505,607.846761 L639,529 Z" id="Polygon-4" stroke="#F2773F" stroke-width="6" sketch:type="MSShapeGroup"></path>
+                  <path d="M281,801 L383,861.025276 L383,979.21169 L281,1037 L179,979.21169 L179,861.025276 L281,801 Z" id="Polygon-5" stroke="#36B455" stroke-width="6" sketch:type="MSShapeGroup"></path>
+              </g>
+          </svg>
+          <div class="message-box">
+            <h1>404</h1>
+            <p>真是抱歉哦，找不到页面</p>
+            <div class="buttons-con">
+              <div class="action-link-wrap">
+  
+              </div>
+            </div>
+          </div>`;
+
+      }
+      if (isCommonUrl) {
+        downloadUrl = normal_download_url
+        tishiDom.style.display = 'none'
+      }
+      document
+        .querySelector(".container")
+        .style.setProperty("--bg-color", bgColor); // body背景色
+      tuiguangBtn.style.setProperty("--btn-normal-color", downBtnBgColor); // 下载客户端按钮颜色
+      tuiguangBtn.style.setProperty("--btn-hover-color", downBtnHoverBgColor);
+      tuiguangBtn.style.setProperty(
+        "--btn-active-color",
+        downBtnActiveBgColor
+      );
+      tuiguangBtn.style.setProperty("--btn-shadow-color", downBtnShadowColor);
+      document.querySelector(".tuiguang_title_text").innerText = logo_title;
+      document.querySelector(
+        ".tuiguang_title_icon"
+      ).style.backgroundImage = `url(${logo_image})`;
+      document.querySelector(".tuiguang_text").innerHTML = tuiguang_text;
+      document.querySelector(".bottom_text").innerText = bottom_text;
+      tuiguangImage.querySelector("img").src = tuiguang_image;
+      tuiguangImage.href = downloadUrl;
+      document.querySelector(".tuiguang_vip").style.display = Boolean(
+        showVipBtn
+      )
+        ? "block"
+        : "none";
+      tuiguangBtn.href = downloadUrl;
+      normalBtn.href = normal_download_url;
+      if (API._sid === 'sem90010') {
+        document.querySelector('.ssh').style.display = 'none';
+      }
+      document.querySelector("title").innerText = page_title;
+      function uet_report_conversion() {
+        window.uetq = window.uetq || [];
+        window.uetq.push('event', 'downloadClick', { "revenue_value": 0, "currency": "CNY" });
+      }
+      tuiguangBtn.addEventListener("click", function () {
+        API.sendGif("1472.3201.gif", { _referer: window.location.href });
+
+        // gdt('track', 'COMPLETE_ORDER',{'page': API.pid, sid: API._sid});
+        gdt("track", "REGISTER")
+        gdt('track_custom', 'CUSTOM_DOWNLOAD', { 'page': API.pid, sid: API._sid });
+        uet_report_conversion()
+      });
+      normalBtn.addEventListener("click", function () {
+        API.sendGif("1472.8147.gif", { _referer: window.location.href });
+        //gdt('track', 'COMPLETE_ORDER',{'pid': API.pid, sid: API._sid});
+        gdt("track", "REGISTER")
+        gdt('track_custom', 'CUSTOM_DOWNLOAD', { 'pid': API.pid, sid: API._sid });
+      });
+      API.sendGif("1472.9261.gif", { _referer: window.location.href });
+    }
+  </script>
+  <script>
+
+  </script>
+  <script src="static/js/jquery.min.js"></script>
+  <script src="static/js/soft_web_download.min.js"></script>
+	<div style="display:none;"><a href="https://smalltool.github.io/">仿站工具</a></div>
+</body>
+
+</html>
